@@ -1,8 +1,8 @@
-name: Attendance Markinhome Job
+name: Attendance Markin Job
 
 on:
   schedule:
-    - cron: '28 10 * * 2,3,5'
+    - cron: '31 10 * * 1,4'
   workflow_dispatch:
 
 jobs:
@@ -19,4 +19,4 @@ jobs:
       - name: Run attendance script with random delay
         run: |
           php -r "sleep(rand(0,120));"  # random delay 0-120 seconds
-          php markinhome.php
+          php markin.php
