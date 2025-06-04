@@ -2,7 +2,7 @@ name: Attendance Markouthome Job
 
 on:
   schedule:
-    - cron: '10 14 * * 2,3,5'
+    - cron: '37 12 * * 2,3,5'
   workflow_dispatch:
 
 jobs:
