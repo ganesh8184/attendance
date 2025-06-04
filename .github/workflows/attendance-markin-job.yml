@@ -2,7 +2,7 @@ name: Attendance Markin Job
 
 on:
   schedule:
-    - cron: '31 10 * * 1,4'
+    - cron: '01 05 * * 1,4'
   workflow_dispatch:
 
 jobs:
