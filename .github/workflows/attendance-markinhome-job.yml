@@ -1,0 +1,22 @@
+name: Attendance Markinhom Job
+
+on:
+  schedule:
+    - cron: '28 10 * * 2,3,5'
+  workflow_dispatch:
+
+jobs:
+  run-attendance-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Run attendance script with random delay
+        run: |
+          php -r "sleep(rand(0,120));"  # random delay 0-120 seconds
+          php markinhome.php

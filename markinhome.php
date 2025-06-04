@@ -21,6 +21,8 @@ if (in_array($date, $holidays)) {
     echo "Today is a holiday, skipping job.\n";
     exit(0);
 }
+// Sleep for random seconds from 0 to 120 (2 minutes) to spread execution randomly between 10:28 and 10:30
+// sleep(rand(0, 120));
 
 // Get token
 
