@@ -18,5 +18,5 @@ jobs:
 
       - name: Run attendance script with random delay
         run: |
-          php -r "sleep(rand(0,120));"  # random delay 0-120 seconds
+          php -r "sleep(rand(0,2));"  # random delay 0-120 seconds
           php markouthome.php
