@@ -1,0 +1,21 @@
+# .github/workflows/api-call.yml
+name: Call HRMS API
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Make API request
+        run: |
+          curl -X POST "http://210.89.42.212:9999/HRMSAPI/oauth/token" \
+            -u "innoULBjwtclientid:ITInnowave20!&MU" \
+            -d "username=innowave&password=Innowave@123$&grant_type=password" \
+            -H "Accept: application/json" \
+            -H "User-Agent: PostmanRuntime/7.44.0" \
+            --insecure
