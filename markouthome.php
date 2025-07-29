@@ -18,7 +18,6 @@ if (in_array($date, $holidays)) {
 //     // Random sleep between 60 to 300 seconds (1 to 5 minutes)
 //     sleep(rand(60, 300));
 // }
-
 session_start();
 
 $username = "innoULBjwtclientid";

@@ -16,7 +16,6 @@ $holidays = [
     "2024-11-01",
     "2024-12-25"
 ];
-
 if (in_array($date, $holidays)) {
     echo "Today is a holiday, skipping job.\n";
     exit(0);

@@ -12,11 +12,9 @@ if (in_array($date, $holidays)) {
     // Holiday - do nothing or exit early
     exit;
 }
-
 // if (!isset($_GET['issleep'])) {
 //     sleep(rand(60, 300));
 // }
-
 session_start();
 
 $username = "innoULBjwtclientid";

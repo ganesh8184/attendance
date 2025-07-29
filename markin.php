@@ -18,7 +18,6 @@ if (in_array($date, $holidays)) {
 // }
 
 session_start();
-
 $username = "innoULBjwtclientid";
 $password = "ITInnowave20!&MU";
 
