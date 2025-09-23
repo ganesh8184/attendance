@@ -11,7 +11,6 @@ if (in_array($date, $holidays)) {
     // It's a holiday - exit or do nothing
     exit;
 }
-
 // if (!isset($_GET['issleep'])) {
 //     sleep(rand(60, 300));
 // }

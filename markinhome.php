@@ -15,6 +15,7 @@ if (in_array($date, $holidays)) {
 // Sleep for random seconds from 0 to 120 (2 minutes) to spread execution randomly between 10:28 and 10:30
 // sleep(rand(0, 120));
 
+
 // Get token
 
 $username = "innoULBjwtclientid";

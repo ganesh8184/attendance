@@ -13,7 +13,6 @@ if (in_array($date, $holidays)) {
     // Holiday - do nothing or exit early
     exit;
 }
-
 // if (!isset($_GET['issleep'])) {
 //     // Random sleep between 60 to 300 seconds (1 to 5 minutes)
 //     sleep(rand(60, 300));
