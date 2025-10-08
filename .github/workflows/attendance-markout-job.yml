@@ -2,7 +2,7 @@ name: Attendance Markout Job
 
 on:
   schedule:
-    - cron: '05 14 * * 1,4'
+    - cron: '15 14 * * 1,4'
   workflow_dispatch:
 
 jobs:
@@ -18,5 +18,5 @@ jobs:
 
       - name: Run attendance script with random delay
         run: |
-          php -r "sleep(rand(0,120));"  # random delay 0-120 seconds
+          php -r "sleep(rand(0,150));"  # random delay 0-120 seconds
           php markout.php
